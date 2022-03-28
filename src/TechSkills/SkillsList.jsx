@@ -1,4 +1,5 @@
 import React from 'react'
+import '../App.scss';
 import api from '../static/Icons/api.png'
 import css from '../static/Icons/css.png'
 import github from '../static/Icons/github.png'
@@ -22,7 +23,7 @@ function SkillsList() {
   return (
     <div>
       <h1>Technical Skills</h1>
-      <div>
+      <div className='skills'>
         <p><img src= {html} alt='html'/> <br/>HTML</p>
         <p><img src= {css} alt='css'/> <br/>CSS</p>
         <p><img src= {js} alt='js'/> <br/>JavaScript</p>
@@ -31,7 +32,7 @@ function SkillsList() {
         <p><img src= {sass} alt='sass'/> <br/>Sass</p>
         <p><img src= {github} alt='github'/><br/>Github</p>
         <p><img src= {api} alt='api'/><br/>API's</p>
-        <p><img src= {styledcomps} alt='styled components' stcomp/> <br/> Styled Components</p>
+        <p><img src= {styledcomps} alt='styled components'/> <br/> Styled Components</p>
         <p><img src= {nodejs} alt='nodejs'/><br/>Node.js</p>
         <p><img src= {adobexd} alt='js'/><br/>Adobe XD</p>
         <p><img src= {inkscape} alt='inkscape'/> <br/>Inkscape</p>

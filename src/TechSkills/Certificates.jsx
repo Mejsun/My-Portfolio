@@ -4,7 +4,7 @@ function Certificates() {
   return (
     <div>
     <h1>Certificates</h1>
-    <div>
+    <div className='certificates'>
     
       <div>
         <img src='' alt='first'/>
@@ -17,7 +17,7 @@ function Certificates() {
       <div>
         <img src='' alt='second'/>
         <div>
-            <h2>FreeCodeCamp</h2>
+          <h2>FreeCodeCamp</h2>
           <p>Tech used: HTML, CSS, JavaScript, API’s </p>
         </div>
       </div>
@@ -25,7 +25,7 @@ function Certificates() {
       <div>
         <img src='' alt='third'/>
         <div>
-            <h2>FreeCodeCamp</h2>
+          <h2>FreeCodeCamp</h2>
           <p>Tech used: HTML, CSS, JavaScript, API’s </p>
          </div>
       </div>

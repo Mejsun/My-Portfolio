@@ -1,5 +1,5 @@
 import About from './About/About';
-import './App.css';
+import './App.scss';
 import ContactForm from './ContactForm/ContactForm';
 import Projects from './Projects/Projects';
 import Certificates from './TechSkills/Certificates';
