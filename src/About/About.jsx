@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
   return (
-    <div>
+    <div className='wrapper'>
     <h1>Mejsun Alghoul</h1> 
     <h3>Junior Front end developer</h3> 
     <div>

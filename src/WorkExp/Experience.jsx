@@ -2,7 +2,7 @@ import React from 'react'
 
 function Experience () {
   return (
-    <div>
+    <div className='wrapper'>
         <h1>Work Experience</h1>
         <div>
           <div>

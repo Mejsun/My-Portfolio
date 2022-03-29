@@ -2,7 +2,7 @@ import React from 'react'
 
 function ContactForm() {
   return (
-    <div>
+    <div className='wrapper'>
     <h1>Get in touch</h1>
     <form>
       <label htmlFor='name'>Name </label>

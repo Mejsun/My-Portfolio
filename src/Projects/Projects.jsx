@@ -3,26 +3,35 @@ import React from 'react'
 function Projects() {
 
 const projectsList = [
-  {name: 'Wishlist', tech: 'React, API’s, React Hooks, Bootstrap, Sass', 
+  {id: 1, name: 'Wishlist', tech: 'React, API’s, React Hooks, Bootstrap, Sass', 
   bgr: 'underconstr', link: 'https://github.com/Mejsun/wishlist'},
-  {name: 'Calculator', tech: 'React, API’s, React Hooks, Bootstrap, Sass', 
+  {id: 2, name: 'Calculator', tech: 'React, API’s, React Hooks, Bootstrap, Sass', 
   bgr: 'calc', link: 'https://github.com/Mejsun/wishlist'},
-  {name: 'URL Shortener', tech: 'React, API’s, React Hooks, Bootstrap, Sass', 
+  {id: 3, name: 'URL Shortener', tech: 'React, API’s, React Hooks, Bootstrap, Sass', 
   bgr: 'underconstr', link: 'https://github.com/Mejsun/wishlist'},
-  {name: 'Pokedex', tech: 'React, API’s, React Hooks, Bootstrap, Sass', 
+  {id: 4, name: 'Pokedex', tech: 'React, API’s, React Hooks, Bootstrap, Sass', 
   bgr: 'Pokedex', link: 'https://github.com/Mejsun/wishlist'},
-  {name: 'Language Shake', tech: 'React, API’s, React Hooks, Bootstrap, Sass', 
+  {id: 5, name: 'Language Shake', tech: 'React, API’s, React Hooks, Bootstrap, Sass', 
   bgr: 'skynews', link: 'https://github.com/Mejsun/wishlist'},
-  {name: 'SkyNews', tech: 'React, API’s, React Hooks, Bootstrap, Sass', 
+  {id: 6, name: 'SkyNews', tech: 'React, API’s, React Hooks, Bootstrap, Sass', 
   bgr:'Lang', link: 'https://github.com/Mejsun/wishlist'},
 ]
 
+let projectId;
 
 function next() {
-  console.log('next')
+  for (let i = 0; i < projectsList.length; i++){
+    projectId = projectsList[i].id
+    let next = projectId++
+    console.log(next)
+  }
+  //projectId++
+  //console.log('next')
 }
+
+
 function prev() {
-  //projectIndex--
+  projectId--
   console.log('prev')
 }
 
