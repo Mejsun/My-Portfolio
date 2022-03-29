@@ -1,8 +1,9 @@
 import React from 'react'
+import Slider from 'react-slick'
 
 function Projects() {
 
-const projectsList = [
+let projectsList = [
   {id: 1, name: 'Wishlist', tech: 'React, API’s, React Hooks, Bootstrap, Sass', 
   bgr: 'underconstr', link: 'https://github.com/Mejsun/wishlist'},
   {id: 2, name: 'Calculator', tech: 'React, API’s, React Hooks, Bootstrap, Sass', 
@@ -17,40 +18,30 @@ const projectsList = [
   bgr:'Lang', link: 'https://github.com/Mejsun/wishlist'},
 ]
 
-let projectId;
-
-function next() {
-  for (let i = 0; i < projectsList.length; i++){
-    projectId = projectsList[i].id
-    let next = projectId++
-    console.log(next)
-  }
-  //projectId++
-  //console.log('next')
-}
-
-
-function prev() {
-  projectId--
-  console.log('prev')
-}
+const settings = {
+  dots: false,
+  infinite: true,
+  centerMode: true,
+  centerPadding: '100px',
+  slidesToShow: 1,
+};
 
   return (
     <div className='wrapper'>
     <h1>Projects</h1>
-      <div className='projects' >
-      {projectsList.map((project, index) => (
-          <div className='projects-cell' key={index}>
-            <img src={require('../static/Images/' + project.bgr + '.png')} alt='screenshot'/>
-            <div className='projectText'>
-              <a className='heading2' href={project.link} target='_blank' rel='noreferrer'>{project.name}</a>
-              <p> Tech used: {project.tech} </p>
-            </div>
-          </div>
-      ))}
+    <div className='projects'>
+    <Slider {...settings}>
+          {projectsList.map((project) => (
+      <div className='projects-cell' key={Math.random()}>
+        <img src={require('../static/Images/' + project.bgr + '.png')} alt='screenshot'/>
+        <div className='projectText'>
+          <a className='heading2' href={project.link} target='_blank' rel='noreferrer'>{project.name}</a>
+          <p> Tech used: {project.tech} </p>
+        </div>
       </div>
-    <button className='prev' onClick={prev}><i className='fas fa-angle-left'></i> </button>
-    <button className='next' onClick={next}><i className='fas fa-angle-right'></i> </button>
+      ))}
+        </Slider>
+      </div>
     </div>
   )
 }
