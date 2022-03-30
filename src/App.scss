@@ -1,14 +1,25 @@
 $font-stack: Helvetica, sans-serif;
 $primary-color: #50587e;
-$secondary-color: #C7D0D8;
-$highlight-color: #DD21BF;
+$secondary-color: #f1f1f1;
+$highlight-color: #ff698e;
 
+@mixin contactButtonGrid {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    width: 45vw;
+}
 
-$animation-timing: 60s;
-$carousel-items: 6;
-$animation-delay-fraction: $animation-timing / $carousel-items;
-$animation-steps-fraction: 120 / $carousel-items;
-$slide-change-timing: 3; // 
+@mixin contactButton {
+    border-radius: 50px;
+    padding: 10px 0;
+    font-size: 1rem;
+    background-color: $highlight-color;
+    color: $secondary-color;
+    border: none;
+}
+
 
 * {
     box-sizing: border-box;
@@ -107,4 +118,11 @@ h1, h2, .heading2 {
     display: grid;
     grid-template-rows: 1fr;   
     grid-template-columns: repeat(3, 1fr);
+}
+
+.contact-grid{
+@include contactButtonGrid();
+    .contact-info{
+        @include contactButton();
+    }
 }

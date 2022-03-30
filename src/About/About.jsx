@@ -5,10 +5,10 @@ function About() {
     <div className='wrapper'>
     <h1>Mejsun Alghoul</h1> 
     <h3>Junior Front end developer</h3> 
-    <div>
-        <button>Linkedin</button>
-        <button>Github</button>
-        <button>CV</button>
+    <div className='contact-grid'>
+        <button className='contact-info'>Linkedin</button>
+        <button className='contact-info'>Github</button>
+        <button className='contact-info'>CV</button>
     </div>
     <div>
       <h3>About me</h3>

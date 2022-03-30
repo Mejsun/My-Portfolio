@@ -27,10 +27,10 @@ function ContactForm() {
       //onClick={() => submitForm()}
       >Submit</button>
     </form>
-    <div>
-    <button> <i className='fas fa-phone fa-fw'></i> 07983497817 </button>
-    <button> <i className='fas fa-envelope fa-fw'></i><a href="mailto:mejsunalghoul@gmail.com">Email</a> </button>
-    <button> <i className='fas fa-location-dot fa-fw'></i> London, UK </button>
+    <div className='contact-grid'>
+    <button className='contact-info'> <i className='fas fa-phone fa-fw'></i> 07983497817 </button>
+    <button className='contact-info'> <i className='fas fa-envelope fa-fw'></i><a href="mailto:mejsunalghoul@gmail.com">Email</a> </button>
+    <button className='contact-info'> <i className='fas fa-location-dot fa-fw'></i> London, UK </button>
     </div>
    </div>
   )
