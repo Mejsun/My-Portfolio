@@ -13,11 +13,11 @@ function About() {
     <div>
       <h3>About me</h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-        Aenean commodo ligula eget dolor. Aenean massa. 
-        Cum sociis natoque penatibus et magnis dis parturient montes, 
-        nascetur ridiculus mus. Donec quam felis, ultricies nec, 
-        pellentesque eu, pretium quis, sem. lla ut metus varius laoreet.
+      I am a self-taught junior Front-End developer.
+      I love problem solving, researching, and using my creativity to build web applications. 
+      I strive to work with attention to detail in mind.
+      I have many transferable skills working independently and as part of a team, and have a motivated, 
+      self-reliant attitude towards work. 
       </p>
     </div>
     </div>
