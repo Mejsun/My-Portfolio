@@ -26,24 +26,24 @@ function SkillsList() {
       <div>
         <h1>Technical Skills</h1>
         <div className='skills'>
-          <p><img src= {html} alt='html'/> <br/>HTML</p>
-          <p><img src= {css} alt='css'/> <br/>CSS</p>
-          <p><img src= {js} alt='js'/> <br/>JavaScript</p>
-          <p><img src= {react} alt='react'/> <br/>React</p>
-          <p><img src= {bootstraplogo} alt='js'/> <br/>Bootstrap</p>
-          <p><img src= {sass} alt='sass'/> <br/>Sass</p>
-          <p><img src= {github} alt='github'/><br/>Github</p>
-          <p><img src= {api} alt='api'/><br/>API's</p>
-          <p><img src= {styledcomps} alt='styled components'/> <br/> Styled Components</p>
-          <p><img src= {nodejs} alt='nodejs'/><br/>Node.js</p>
-          <p><img src= {adobexd} alt='js'/><br/>Adobe XD</p>
-          <p><img src= {inkscape} alt='inkscape'/> <br/>Inkscape</p>
-          <p><img src= {canva} alt='js'/><br/>Canva</p>
-          <p><img src= {jquery} alt='jQuery'/> <br/> jQuery</p>
-          <p><img src= {json} alt='json'/> <br/>JSON</p>
-          <p><img src= {mongodb} alt='mongodb'/> <br/> MongoDB</p>
-          <p><img src= {wordpress} alt='wordpress'/><br/>Wordpress</p>
-          <p hidden><img src= {redux} alt='redux'/> <br/>Redux</p>
+          <div><img src= {html} alt='html'/>HTML</div>
+          <div><img src= {css} alt='css'/>CSS</div>
+          <div><img src= {js} alt='js'/>JavaScript</div>
+          <div><img src= {react} alt='react'/>React</div>
+          <div><img src= {bootstraplogo} alt='js'/>Bootstrap</div>
+          <div><img src= {sass} alt='sass'/>Sass</div>
+          <div><img src= {github} alt='github'/>Github</div>
+          <div><img src= {api} alt='api'/>API's</div>
+          <div><img src= {styledcomps} alt='styled components'/>Styled Components</div>
+          <div><img src= {nodejs} alt='nodejs'/>Node.js</div>
+          <div><img src= {adobexd} alt='js'/>Adobe XD</div>
+          <div><img src= {inkscape} alt='inkscape'/>Inkscape</div>
+          <div><img src= {canva} alt='js'/>Canva</div>
+          <div><img src= {jquery} alt='jQuery'/>jQuery</div>
+          <div><img src= {json} alt='json'/>JSON</div>
+          <div><img src= {mongodb} alt='mongodb'/>MongoDB</div>
+          <div><img src= {wordpress} alt='wordpress'/>Wordpress</div>
+          <div hidden><img src= {redux} alt='redux'/>Redux</div>
         </div>
       </div>
       <Certificates/>
