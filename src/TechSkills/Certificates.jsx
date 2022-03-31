@@ -5,31 +5,22 @@ function Certificates() {
     <div>
     <h1>Certificates</h1>
     <div className='certificates'>
-    
-      <div>
-        <img src='' alt='first'/>
-        <div>
+  
+        <div className='certificate-text'>
           <h2>FreeCodeCamp</h2>
-          <p>Tech used: HTML, CSS, JavaScript, API’s </p>
+          <p>Responsive Web Design (HTML and CSS)</p>
         </div>
-      </div>
       
-      <div>
-        <img src='' alt='second'/>
-        <div>
+        <div className='certificate-text'>
           <h2>FreeCodeCamp</h2>
-          <p>Tech used: HTML, CSS, JavaScript, API’s </p>
+          <p>JavaScript Algorithms and Data Structures</p>
         </div>
-      </div>
       
-      <div>
-        <img src='' alt='third'/>
-        <div>
+        <div className='certificate-text'>
           <h2>FreeCodeCamp</h2>
-          <p>Tech used: HTML, CSS, JavaScript, API’s </p>
+          <p>Front End Development Libraries (Bootstrap, jQuery, Sass, React, Redux)</p>
          </div>
       </div>
-    </div>
     </div>
   )
 }

@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
   return (
-    <div className='about-container wrapper' id='about'>
+    <div className='profile-container wrapper' id='about'>
     <div>
       <h1>Mejsun Alghoul</h1> 
       <h2>Junior Front end developer</h2> 
@@ -12,7 +12,7 @@ function About() {
           <a className='contact-info' href="https://drive.google.com/file/d/1IX0W6sD9LlnYNg7Y5WodMRyLt4X7SuBL/view?usp=sharing" target='_blank' rel='noreferrer'><i class="fa-solid fa-file-lines fa-fw"></i>CV</a>
       </div>
     </div>
-    <div>
+    <div className='about-container'>
       <h2>About me</h2>
       <p>
       I am a self-taught junior Front-End developer.

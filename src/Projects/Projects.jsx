@@ -13,9 +13,9 @@ let projectsList = [
   {id: 4, name: 'Pokedex', tech: 'React, API’s, React Hooks, Bootstrap, Sass', 
   bgr: 'Pokedex', link: 'https://github.com/Mejsun/wishlist'},
   {id: 5, name: 'Language Shake', tech: 'React, API’s, React Hooks, Bootstrap, Sass', 
-  bgr: 'skynews', link: 'https://github.com/Mejsun/wishlist'},
+  bgr: 'Lang', link: 'https://github.com/Mejsun/wishlist'},
   {id: 6, name: 'SkyNews', tech: 'React, API’s, React Hooks, Bootstrap, Sass', 
-  bgr:'Lang', link: 'https://github.com/Mejsun/wishlist'},
+  bgr:'skynews', link: 'https://github.com/Mejsun/wishlist'},
 ]
 
 const settings = {
