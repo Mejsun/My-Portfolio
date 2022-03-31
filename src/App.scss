@@ -198,7 +198,7 @@ h2, .heading2{
         &::after {
             content: "";
             position: absolute;
-            filter: opacity(15%);
+            filter: opacity(10%);
             top: 0px;
             right: 0;
             bottom: 0;
@@ -211,21 +211,26 @@ h2, .heading2{
     }
 }
 
-.work-experience-list{
-    width: 40vw;
-    margin: auto;
-    .work-experience-item{
-       padding-bottom: 25px;
+.work-container{
+    img{
+        display: flex;
+        margin: 20px auto;
     }
-    h2, p { 
-        font-size: 1.5rem
+    .work-experience-list{
+        width: 40vw;
+        margin: auto;
+        .work-experience-item{
+            padding-bottom: 25px;
+        }
+        h2, p { 
+            text-align: left;
+            font-size: 1.5rem
+        }
+        h2{
+            padding: 0;
+            margin: 0;
+        }  
     }
-    h2{
-        text-align: left;
-        padding: 0;
-        margin: 0;
-    }
-    
 }
 
 .contact-grid{
