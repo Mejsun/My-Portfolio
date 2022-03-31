@@ -182,7 +182,7 @@ h2, .heading2{
     width: 100%;
     justify-content: space-evenly;
     .certificate-text{
-        width: 25.5%;
+        width: 26%;
         padding: 80px 20px;
         position: relative;
         
@@ -209,6 +209,23 @@ h2, .heading2{
             background-size: cover;
         }
     }
+}
+
+.work-experience-list{
+    width: 40vw;
+    margin: auto;
+    .work-experience-item{
+       padding-bottom: 25px;
+    }
+    h2, p { 
+        font-size: 1.5rem
+    }
+    h2{
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+    
 }
 
 .contact-grid{
