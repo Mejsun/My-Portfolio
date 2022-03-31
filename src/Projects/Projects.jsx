@@ -27,7 +27,7 @@ const settings = {
 };
 
   return (
-    <div className='wrapper'>
+    <div className='wrapper' id='projects'>
     <h1>Projects</h1>
     <div className='projects'>
     <Slider {...settings}>

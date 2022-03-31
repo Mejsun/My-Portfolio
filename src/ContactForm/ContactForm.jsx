@@ -74,36 +74,38 @@ async function submitForm (){
 }
 
   return (
-    <div className='contact-container wrapper'>
-    <h1>Get in touch</h1>
+    <div className='contact-container wrapper' id='contact'>
+    <div>
+      <h1>Get in touch</h1>
+      <div className='contact-grid'>
+        <button className='contact-info'> <i className='fas fa-phone fa-fw'></i> 07983497817 </button>
+        <button className='contact-info'> <i className='fas fa-envelope fa-fw'></i><a href="mailto:mejsunalghoul@gmail.com" style={{color: 'white'}}>Email</a> </button>
+        <button className='contact-info'> <i className='fas fa-location-dot fa-fw'></i> London, UK </button>
+      </div>
+    </div>
     <form>
-      <label htmlFor='name'>Name </label>
+      <label htmlFor='name' className='heading2'>Name </label>
       <input type='text' name='name'
       onChange={(e) => {contactInfo(e)}} 
       onBlur={()=>collectInfo()} ref={nameRef} 
       />
       
-      <label htmlFor='email'> Email </label>
+      <label htmlFor='email' className='heading2'> Email </label>
       <input type='email' name='email' 
       onChange={(e) => {contactInfo(e)}} 
       onBlur={()=>collectInfo()} ref={emailRef} 
       />
       
-      <label htmlFor='message'> Message </label>
+      <label htmlFor='message' className='heading2'> Message </label>
       <input className='message' type='text' name='message' 
       onChange={(e) => {contactInfo(e)}}
       onBlur={()=>collectInfo()} ref={messageRef} 
       />
       
-      <button type='button' 
+      <button type='button' className='submit'
       onClick={() => submitForm()}
       >Submit</button>
     </form>
-    <div className='contact-grid'>
-    <button className='contact-info'> <i className='fas fa-phone fa-fw'></i> 07983497817 </button>
-    <button className='contact-info'> <i className='fas fa-envelope fa-fw'></i><a href="mailto:mejsunalghoul@gmail.com">Email</a> </button>
-    <button className='contact-info'> <i className='fas fa-location-dot fa-fw'></i> London, UK </button>
-    </div>
    </div>
   )
 }

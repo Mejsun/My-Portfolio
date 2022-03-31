@@ -22,7 +22,7 @@ import Certificates from './Certificates';
 
 function SkillsList() {
   return (
-    <div className='wrapper'>
+    <div className='wrapper' id='skills'>
       <div>
         <h1>Technical Skills</h1>
         <div className='skills'>
