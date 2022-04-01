@@ -6,7 +6,7 @@ function Experience () {
     <div className='work-container wrapper' id='experience'>
       <div>
         <h1>Work Experience</h1>
-        <p>Click the map to see my education background</p>
+        <p className='instruction'>Click the map to see my educational background. Click anywhere outside to close it.</p>
         <EduMap/>
       </div>
         <div className='work-experience-list'>

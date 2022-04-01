@@ -1,16 +1,13 @@
-import React, {useState, useEffect, useRef} from 'react'
+import React, { useEffect, useRef} from 'react'
 import map from '../static/Images/map.png'
 
 function EduMap() {
-    const [open, setOpen] = useState(false);
     const ref = useRef(null)
 
     const toggleOpen = () => {
-        setOpen(true)
         ref.current.style.display = 'flex'
     }
     const toggleClose = () => {
-        setOpen(false)
         ref.current.style.display = 'none'
     }
 
@@ -29,12 +26,9 @@ function EduMap() {
         <img src={map} alt='europe map' className='map-img'></img>
         </button>    
         <div ref={ref} className='uni-box'>
-          <button onClick={toggleClose} className='close-btn'><i className='fas fa-close'></i></button>
-            <div>
-                <h3>2018-2019: University of Westminster - Tourism MA</h3>
-                <h3>2014-2018: Economics and Business, University of Sarajevo - BA Management</h3>
-                <h3>2017-2018: University of Pavia - Erasmus student</h3>
-            </div>
+            <h3>2018-2019: University of Westminster - Tourism MA</h3>
+            <h3>2014-2018: Economics and Business, University of Sarajevo - BA Management</h3>
+            <h3>2017-2018: University of Pavia - Erasmus student</h3>
         </div>
     </div>
   )
