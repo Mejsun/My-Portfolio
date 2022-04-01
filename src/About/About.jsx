@@ -7,9 +7,9 @@ function About() {
       <h1>Mejsun Alghoul</h1> 
       <h2>Junior Front end developer</h2> 
       <div className='contact-grid'>
-          <a className='contact-info' href='https://github.com/Mejsun' target='_blank' rel='noreferrer'><i class="fa-brands fa-github-square fa-fw"></i>Github</a>
-          <a className='contact-info' href='https://www.linkedin.com/in/mejsun-al-ghoul/' target='_blank' rel='noreferrer'><i class="fa-brands fa-linkedin fa-fw"></i>Linkedin</a>
-          <a className='contact-info' href="https://drive.google.com/file/d/1IX0W6sD9LlnYNg7Y5WodMRyLt4X7SuBL/view?usp=sharing" target='_blank' rel='noreferrer'><i class="fa-solid fa-file-lines fa-fw"></i>CV</a>
+          <a className='contact-info' href='https://github.com/Mejsun' target='_blank' rel='noreferrer'><i className="fa-brands fa-github-square fa-fw"></i>Github</a>
+          <a className='contact-info' href='https://www.linkedin.com/in/mejsun-al-ghoul/' target='_blank' rel='noreferrer'><i className="fa-brands fa-linkedin fa-fw"></i>Linkedin</a>
+          <a className='contact-info' href="https://drive.google.com/file/d/1IX0W6sD9LlnYNg7Y5WodMRyLt4X7SuBL/view?usp=sharing" target='_blank' rel='noreferrer'><i className="fa-solid fa-file-lines fa-fw"></i>CV</a>
       </div>
     </div>
     <div className='about-container'>
