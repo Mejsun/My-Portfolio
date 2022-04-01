@@ -108,8 +108,8 @@ h2, .heading2{
     }
     .hand-waving{
         height: 70px;
-        margin: 165px 0 0 -10px;
-        animation: 2s infinite wave;
+        margin: 165px 0 0 -18px;
+        animation: 1s infinite wave;
     }
 }
 .projects{ 
@@ -335,7 +335,7 @@ h2, .heading2{
 }
 
 @keyframes wave {
-    0% { transform: rotate(-15deg); }
+    0% { transform: rotate(-28deg); }
     50% { transform: rotate(-35deg);}
-    100% { transform: rotate(-15deg);}
+    100% { transform: rotate(-28deg);}
   }
