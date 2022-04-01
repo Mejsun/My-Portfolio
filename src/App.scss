@@ -36,12 +36,11 @@ $font-body: 'Dosis', sans-serif;
 }
 
 @mixin wrapper {
-    height: 100vh;
+    height: fit-content;
     max-width: 100vw;
-    padding: 6vh 5vw 0 5vw;
+    padding: 85px 5vw ;
     border-bottom: $border-bottom;
     scroll-snap-align: start;
-    overflow: hidden;
 }
 
 * {
@@ -51,11 +50,7 @@ $font-body: 'Dosis', sans-serif;
     text-decoration: none;
     font-family: $font-body;
 }
-.App{
-    scroll-snap-type: y mandatory;
-    overflow: auto;
-    height: 100vh;
-}
+
 h1, h2, .heading2 {
   color: $primary-color;
   text-align: center;
@@ -79,7 +74,7 @@ h2, .heading2{
 .menu-container{
     position: fixed;
     top: 0;
-    height: 6vh;
+    height: 70px;
     display: flex;
     background-color: rgba(255, 255, 255, .15);  
     backdrop-filter: blur(5px);
@@ -90,22 +85,26 @@ h2, .heading2{
     align-items: center;
     z-index: 1;
     .menu-item{
-        padding: 5px 40px;
+        padding: 10px 40px;
+        font-size: 1.2rem;
         text-align: center;
         color: $primary-color;
         transition: $transition;
         &:hover{
             color: white;
-            box-shadow: inset 0 -6vh 0 0 $highlight-color;
+            box-shadow: inset 0 -80px 0 0 $highlight-color;
         }
     }
 }
 .wrapper{
     @include wrapper();
 }
+.profile-container{
+    padding-top: 150px;
+}
 .projects{ 
     width: 50vw;
-    margin: 10vh auto;
+    margin: auto;
 }
 .slick-prev{
     left: -5vw;
@@ -172,7 +171,7 @@ h2, .heading2{
             font-weight: 600;
         }
         img{
-            height: 5vh;
+            height: 40px;
             object-fit: contain;
         }
     }
@@ -183,9 +182,12 @@ h2, .heading2{
     justify-content: space-evenly;
     .certificate-text{
         width: 26%;
-        padding: 80px 20px;
+        padding: 80px 30px;
         position: relative;
-        
+        transition: $transition;
+        &:hover{
+            transform: scale(1.05);
+        }
         &:nth-child(1)::after{
             background-image: url('./static/Images/cert1.png');
         }
@@ -212,10 +214,11 @@ h2, .heading2{
 }
 
 .work-container{
-    img{
+    .map-img{
         display: flex;
-        margin: 20px auto;
+        margin: 50px auto;
         opacity: 50%;
+        background-color: white;
     }
     .work-experience-list{
         width: 40vw;
@@ -245,10 +248,10 @@ h2, .heading2{
         background-color: $secondary-color;
         display: flex;
         flex-direction: column ;
-        padding: 5px 20px;
+        padding: 20px;
         border-radius: 50px;
         width: 40vw;
-        height: 60vh;
+        height: fit-content;
         margin: auto;
     }
     input{
@@ -291,12 +294,11 @@ h2, .heading2{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 3vw;
-    margin: auto;
     align-items: center;
     justify-content: space-between;
 }
 .about-container{
     background-color: $secondary-color;
-    padding: 10vh 30px;
+    padding: 90px 30px;
     border-radius: 100px 100px 100px 0;
 }

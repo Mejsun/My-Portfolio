@@ -1,5 +1,5 @@
 import React from 'react'
-import map from '../static/Images/map.png'
+import EduMap from './EduMap'
 
 function Experience () {
   return (
@@ -7,9 +7,7 @@ function Experience () {
       <div>
         <h1>Work Experience</h1>
         <p>Click the map to see my education background</p>
-        <div>
-            <img src={map} alt='europe map'></img>
-        </div>
+        <EduMap/>
       </div>
         <div className='work-experience-list'>
         <div className='work-experience-item'>
