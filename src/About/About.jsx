@@ -1,9 +1,15 @@
 import React from 'react'
+import body from '../static/Images/body.png'
+import hand from '../static/Images/hand.png'
 
 function About() {
   return (
     <div className='profile-container wrapper' id='about'>
     <div>
+      <div className='my-image-waving'>
+        <img src={body} alt='body' className='body-static'/>
+        <img src={hand} alt='hand' className='hand-waving'/>
+      </div>
       <h1>Mejsun Alghoul</h1> 
       <h2>Junior Front end developer</h2> 
       <div className='contact-grid'>
