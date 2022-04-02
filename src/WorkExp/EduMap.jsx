@@ -1,5 +1,5 @@
 import React, { useEffect, useRef} from 'react'
-import map from '../static/Images/map.png'
+import map from '../static/Images/map.avif'
 
 function EduMap() {
     const ref = useRef(null)

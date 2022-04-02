@@ -27,13 +27,13 @@ const settings = {
 };
 
   return (
-    <div className='wrapper' id='projects'>
+    <div className='container-projects wrapper' id='projects'>
     <h1>Projects</h1>
-    <div className='projects'>
+    <div className='projects-slider'>
     <Slider {...settings}>
           {projectsList.map((project) => (
       <div className='projects-cell' key={Math.random()}>
-        <img src={require('../static/Images/' + project.bgr + '.png')} alt='screenshot'/>
+        <img src={require('../static/Images/' + project.bgr + '.avif')} alt='screenshot'/>
         <div className='project-text'>
           <a className='heading2' href={project.link} target='_blank' rel='noreferrer'>{project.name}</a>
           <p> Tech used: {project.tech} </p>

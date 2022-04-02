@@ -1,6 +1,6 @@
 import React from 'react'
-import body from '../static/Images/body.png'
-import hand from '../static/Images/hand.png'
+import body from '../static/Images/body.avif'
+import hand from '../static/Images/hand.avif'
 
 function About() {
   return (
