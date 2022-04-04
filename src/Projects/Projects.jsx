@@ -21,8 +21,8 @@ let projectsList = [
 const settings = {
   dots: false,
   infinite: true,
-  centerMode: true,
-  centerPadding: '100px',
+  //centerMode: true,
+  //centerPadding: '100px',
   slidesToShow: 1,
 };
 

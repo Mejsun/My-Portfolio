@@ -18,7 +18,7 @@ function Certificates() {
       
         <div className='certificate-text'>
           <h2>FreeCodeCamp</h2>
-          <p>Front End Development Libraries (Bootstrap, jQuery, Sass, React, Redux)</p>
+          <p>Front End Libraries (Bootstrap, jQuery, Sass, React, Redux)</p>
          </div>
       </div>
     </div>
