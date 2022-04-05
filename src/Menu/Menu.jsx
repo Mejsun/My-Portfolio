@@ -1,5 +1,5 @@
 import React, {useRef} from 'react'
-import { Link } from 'react-router-dom'
+//import { Link } from 'react-router-dom'
 import './Menu.scss'
 
 function Menu() {
@@ -18,11 +18,11 @@ function Menu() {
     <div className='menu-wrapper'>
     <button className='burger' onClick={toggleOpen}><i className="fa fa-bars"></i></button>
     <div className='menu-container' ref={ref}>
-        <Link className='menu-item' to='/'><i className="fa-solid fa-user"></i>About</Link>
-        <Link className='menu-item' to='projects'><i className="fa-solid fa-laptop-code"></i>Projects</Link>
-        <Link className='menu-item' to='skills'><i className="fa-solid fa-user-gear"></i>Skills</Link>
-        <Link className='menu-item' to='experience'><i className="fa-solid fa-briefcase"></i>Experience</Link>
-        <Link className='menu-item' to='contact'><i className="fa-solid fa-envelope"></i>Contact</Link>
+        <a href='#about' className='menu-item' to='/'><i className="fa-solid fa-user"></i>About</a>
+        <a href='#projects' className='menu-item' to='projects'><i className="fa-solid fa-laptop-code"></i>Projects</a>
+        <a href='#skills' className='menu-item' to='skills'><i className="fa-solid fa-user-gear"></i>Skills</a>
+        <a href='#experience' className='menu-item' to='experience'><i className="fa-solid fa-briefcase"></i>Experience</a>
+        <a href='#contact' className='menu-item' to='contact'><i className="fa-solid fa-envelope"></i>Contact</a>
     </div>
     </div>
   )
