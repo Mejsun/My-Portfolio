@@ -1,0 +1,38 @@
+@import '../App.scss';
+
+.my-image-waving{
+    @include centre();
+    padding-top: 30px;
+    opacity: 0.7;
+    .body-static{
+        height: 350px;
+        @media (max-width: $breakpoint-xs){
+            height: 200px;
+          }
+    }
+    .hand-waving{
+        height: 70px;
+        margin: 165px 0 0 -18px;
+        animation: 1s infinite wave;
+        @media (max-width: $breakpoint-xs){
+            height: 40px;
+            margin: 92px 0 0 -6px;
+          }
+    }
+}
+.about-container{
+    background-color: $secondary-color;
+    padding: 90px 30px;
+    border-radius: 100px 100px 100px 0;
+    @media (max-width: $breakpoint-medium){
+        border-radius: 0px 100px 100px 100px;
+    }
+    @media (max-width: $breakpoint-xs){
+        padding: 30px;
+      }
+}
+@keyframes wave {
+    0% { transform: rotate(-28deg); }
+    50% { transform: rotate(-35deg);}
+    100% { transform: rotate(-28deg);}
+}

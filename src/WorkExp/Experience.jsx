@@ -1,5 +1,6 @@
 import React from 'react'
 import EduMap from './EduMap'
+import './Experience.scss'
 
 function Experience () {
   return (

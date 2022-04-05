@@ -1,0 +1,75 @@
+@import '../App.scss';
+
+.menu-wrapper{
+    position: fixed;
+    top: 0;
+    height: 70px;
+    display: flex;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    border-bottom: $border-bottom;
+    width: 88vw;
+    margin: 0 5vw;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 3;
+    @media (max-width: $breakpoint-mobile){
+        justify-content: flex-start ;
+    }
+}
+
+.burger{
+    display: none;
+    @media (max-width: $breakpoint-mobile){
+        position: absolute;
+        display: block;
+        background-color: white;
+        border: none;
+        font-size: 2rem;
+        color: $highlight-color;
+        padding: 0 10px;
+        transition: $transition;
+        border-radius: 10px;
+        &:hover{
+            cursor: pointer;
+            background-color: $highlight-color;
+            color: $secondary-color;
+        }
+    }
+}
+
+.menu-container{
+    display: flex;
+    flex-direction: row;
+    .menu-item{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 40px;
+        font-size: 1.2rem;
+        color: $primary-color;
+        transition: $transition;     
+        @media (max-width: $breakpoint-small){
+            padding: 10px 20px;
+        }
+        @media (max-width: $breakpoint-xs){
+            padding: 10px 17px;
+        }
+        @media (max-width: $breakpoint-mobile){
+            flex-direction: row;
+            column-gap: 10px;
+            width: 88vw;
+            background-color: $primary-color;
+            color: white;                
+        }
+        &:hover{
+            color: white;
+            box-shadow: inset 0 -80px 0 0 $highlight-color;
+        } 
+    }  
+    @media (max-width: $breakpoint-mobile){
+        margin-top: 298px;
+        display: none;
+        flex-direction: column;
+        position: relative;
+    }
+}

@@ -1,0 +1,63 @@
+@import '../App.scss';
+
+.work-container{
+    .instruction{
+        font-size: 1.5rem;
+    }
+    .button-box{
+        display: flex;
+        margin: 20px auto;
+        border: 1px solid $secondary-color;
+        cursor: pointer;
+        background-color: rgba($secondary-color, 0.2);
+        .map-img{
+            margin: 50px 20px;
+            opacity: 50%;
+            @media (max-width: $breakpoint-xs){
+                margin: 10px;
+                width: 400px;
+            }
+            @media (max-width: $breakpoint-mobile){
+                width: 220px;
+            }
+        }
+    }
+    .uni-box{
+        position: sticky;
+        display: none;
+        z-index: 2;
+        font-size: 1.2rem;
+        background-color: rgba(255, 255, 255, .85);
+        margin: -487px auto 0px auto;
+        height: 467px;
+        width: 510px;
+        margin-bottom: 20px;
+        padding: 0 20px;
+        justify-content: center;
+        flex-direction: column;
+        @media (max-width: $breakpoint-xs){
+            margin-top: -352px;
+            width: 420px;
+            height: 332px;
+        }
+        @media (max-width: $breakpoint-mobile){
+            width: 240px;
+            height: 192px;
+            margin-top: -212px;
+            font-size: 1rem;
+            font-weight: 300;
+            padding: 5px;
+        }
+    }
+    .work-experience-list{
+        .work-experience-item{
+            padding-bottom: 30px;
+        }
+        h2, p { 
+            text-align: left;
+            font-size: 1.5rem;
+            padding: 0;
+        }
+        
+    }
+}

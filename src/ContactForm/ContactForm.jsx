@@ -1,11 +1,12 @@
 import React, {useRef, useState} from 'react'
+import './Contact.scss'
 
 function ContactForm() {
 
   const [contact, setContact] = useState({name:'', email:'', message:''});
-const nameRef = useRef();
-const emailRef = useRef();
-const messageRef = useRef();
+  const nameRef = useRef();
+  const emailRef = useRef();
+  const messageRef = useRef();
 
 function collectInfo(){
   contact.name = nameRef.current.value

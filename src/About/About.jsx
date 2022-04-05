@@ -1,6 +1,7 @@
 import React from 'react'
 import body from '../static/Images/body.avif'
 import hand from '../static/Images/hand.avif'
+import './About.scss'
 
 function About() {
   return (
