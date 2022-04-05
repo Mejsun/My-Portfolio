@@ -30,7 +30,7 @@ function SkillsList() {
         <h1>Technical Skills</h1>
         <div className='skills'>
         {skillsList.map((skill) => (
-          <div><img src= {require('../static/Icons/' + skill.icon + '.avif')} alt='icon'/>{skill.name}</div>
+          <div key={Math.random()}><img src= {require('../static/Icons/' + skill.icon + '.avif')} alt='icon'/>{skill.name}</div>
         ))}
         </div>
       </div>

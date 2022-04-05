@@ -7,10 +7,15 @@ function Menu() {
   const ref = useRef(null)
   
   const toggleOpen = () => {
-    if(ref.current.style.display === 'none'){
+    if(window.innerWidth < 500){
+      if(ref.current.style.display === 'none'){
+        ref.current.style.display = 'flex'
+        console.log(window.innerWidth)
+      }else {
+        ref.current.style.display = 'none'
+      }
+    }else{
       ref.current.style.display = 'flex'
-    }else {
-      ref.current.style.display = 'none'
     }
   }
 
