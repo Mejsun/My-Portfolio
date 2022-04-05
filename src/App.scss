@@ -82,7 +82,7 @@ h2, .heading2 {
     text-transform: uppercase;
 }
 .wrapper {
-    min-height: 100vh;
+    height: fit-content;
     max-width: 100vw;
     padding: 85px 5vw 40px 5vw;
     border-bottom: $border-bottom;
