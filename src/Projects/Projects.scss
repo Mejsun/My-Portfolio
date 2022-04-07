@@ -18,12 +18,9 @@
 }
 .slick-prev{
     left: -8vw;
-    @media (max-width: $breakpoint-small){
-        left: -6vw;
-      }
 }
 .slick-next{
-    right: -4vw;
+    right: -6vw;
 }
 .slick-next:before, .slick-prev:before {
     font-size: 3rem;

@@ -1,12 +1,14 @@
+import React, {lazy} from 'react'
 import {
   Routes,
   Route,
 } from "react-router-dom";
-import About from '../About/About';
-import ContactForm from '../ContactForm/ContactForm';
-import Projects from '../Projects/Projects';
-import SkillsList from '../TechSkills/SkillsList'
-import Experience from '../WorkExp/Experience';
+
+const About = lazy(() => import('../About/About'))
+const ContactForm = lazy(() => import('../ContactForm/ContactForm'))
+const Projects = lazy(() => import('../Projects/Projects'))
+const SkillsList = lazy(() => import('../TechSkills/SkillsList'))
+const Experience = lazy(() => import('../WorkExp/Experience'))
 
 function Router() {
   return (

@@ -21,7 +21,7 @@ function Menu() {
 
   return (
     <div className='menu-wrapper'>
-    <button className='burger' onClick={toggleOpen}><i className="fa fa-bars"></i></button>
+    <button className='burger' onClick={toggleOpen} aria-label='button'><i className="fa fa-bars"></i></button>
     <div className='menu-container' ref={ref}>
         <a href='#about' className='menu-item' to='/'><i className="fa-solid fa-user"></i>About</a>
         <a href='#projects' className='menu-item' to='projects'><i className="fa-solid fa-laptop-code"></i>Projects</a>

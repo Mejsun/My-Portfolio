@@ -86,19 +86,19 @@ async function submitForm (){
     </div>
     <form>
       <label htmlFor='name' className='heading2'>Name </label>
-      <input type='text' name='name'
+      <input type='text' name='name' aria-label='input'
       onChange={(e) => {contactInfo(e)}} 
       onBlur={()=>collectInfo()} ref={nameRef} 
       />
       
       <label htmlFor='email' className='heading2'> Email </label>
-      <input type='email' name='email' 
+      <input type='email' name='email' aria-label='input'
       onChange={(e) => {contactInfo(e)}} 
       onBlur={()=>collectInfo()} ref={emailRef} 
       />
       
       <label htmlFor='message' className='heading2'> Message </label>
-      <input className='message' type='text' name='message' 
+      <input className='message' type='text' name='message' aria-label='input'
       onChange={(e) => {contactInfo(e)}}
       onBlur={()=>collectInfo()} ref={messageRef} 
       />
