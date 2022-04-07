@@ -5,18 +5,22 @@ import './Projects.scss'
 function Projects() {
 
 let projectsList = [
-  {id: 1, name: 'Wishlist', tech: 'React, API’s, React Hooks, Bootstrap, Sass', 
+  {name: 'Wishlist', tech: 'React, API’s, React Hooks, Bootstrap, Sass', 
   bgr: 'underconstr', link: 'https://github.com/Mejsun/wishlist'},
-  {id: 2, name: 'Calculator', tech: 'React, API’s, React Hooks, Bootstrap, Sass', 
+  {name: 'Calculator', tech: 'HTML, CSS, JavaScript', 
   bgr: 'calc', link: 'https://github.com/Mejsun/wishlist'},
-  {id: 3, name: 'URL Shortener', tech: 'React, API’s, React Hooks, Bootstrap, Sass', 
+  {name: 'URL Shortener', tech: 'JavaAcript, Node.js, MongoDB, Express', 
   bgr: 'underconstr', link: 'https://github.com/Mejsun/wishlist'},
-  {id: 4, name: 'Pokedex', tech: 'React, API’s, React Hooks, Bootstrap, Sass', 
+  {name: 'Pokedex', tech: 'HTML, CSS, JavaScript, API', 
   bgr: 'Pokedex', link: 'https://github.com/Mejsun/wishlist'},
-  {id: 5, name: 'Language Shake', tech: 'React, API’s, React Hooks, Bootstrap, Sass', 
+  {name: 'Language Shake', tech: 'HTML, CSS, JavaScript', 
   bgr: 'Lang', link: 'https://github.com/Mejsun/wishlist'},
-  {id: 6, name: 'SkyNews', tech: 'React, API’s, React Hooks, Bootstrap, Sass', 
+  {name: 'SkyNews', tech: 'HTML, CSS', 
   bgr:'skynews', link: 'https://github.com/Mejsun/wishlist'},
+  {name: 'Nodemailer', tech: 'Node.js, Express',
+  bgr:'underconstr', link:'https://github.com/Mejsun/nodemailer'},
+  {name: 'To do list', tech: 'React, React Hooks, Sass',
+  bgr:'todo',  link: 'https://mytodosonweb.netlify.app/'}
 ]
 
 const settings = {
@@ -30,6 +34,7 @@ const settings = {
   return (
     <div className='container-projects wrapper' id='projects'>
     <h1>Projects</h1>
+    <p> Please see more projects on my <a href='https://codepen.io/mejsun' target='_blank' rel='noreferrer'>Codepen</a></p>
     <div className='projects-slider'>
     <Slider {...settings}>
           {projectsList.map((project) => (
