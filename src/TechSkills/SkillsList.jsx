@@ -20,7 +20,6 @@ let skillsList = [
   {name: 'Wordpress', icon: 'wordpress'},
   {name: 'Adobe XD', icon: 'adobexd'},
   {name: 'JSON', icon: 'json'},
-  {name: 'Redux', icon: 'redux'},
 ]
 
 function SkillsList() {

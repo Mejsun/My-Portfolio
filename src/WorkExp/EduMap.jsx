@@ -27,7 +27,7 @@ function EduMap() {
         </button>    
         <div ref={ref} className='uni-box'>
             <h3>2018-2019: University of Westminster - Tourism MA</h3>
-            <h3>2014-2018: Economics and Business, University of Sarajevo - BA Management</h3>
+            <h3>2014-2018: University of Sarajevo - Economics and Business BA</h3>
             <h3>2017-2018: University of Pavia - Erasmus student</h3>
         </div>
     </div>
