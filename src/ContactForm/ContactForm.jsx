@@ -71,7 +71,9 @@ async function submitForm (){
         alert("Message failed to send");
       }
     })
-  } 
+  } else{
+    alert('Please complete all form fields')
+  }
 }
 
   return (
