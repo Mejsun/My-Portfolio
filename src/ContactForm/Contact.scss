@@ -26,9 +26,11 @@
         }
     .invalid{
         outline: solid red;
+        border-radius: 50px;
     }
     .valid{
         outline: solid green;
+        border-radius: 50px;
     }
     .submit{
         color: $primary-color;

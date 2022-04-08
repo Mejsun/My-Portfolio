@@ -1,4 +1,4 @@
-import React, {useRef} from 'react'
+import React, {useRef, useEffect} from 'react'
 //import { Link } from 'react-router-dom'
 import './Menu.scss'
 
@@ -10,14 +10,28 @@ function Menu() {
     if(window.innerWidth < 500){
       if(ref.current.style.display === 'none'){
         ref.current.style.display = 'flex'
-        console.log(window.innerWidth)
-      }else {
+      }else{
         ref.current.style.display = 'none'
       }
-    }else{
-      ref.current.style.display = 'flex'
-    }
   }
+}
+
+const toggleClose = () => {
+  if(window.innerWidth < 500 && ref.current.style.display === 'flex' ){
+    ref.current.style.display = 'none'
+  }
+}
+
+useEffect(() => {
+    const clickOutside = (e) =>{
+      toggleClose()
+    }
+    document.addEventListener('click', clickOutside, true);
+  return () => {
+    document.removeEventListener('click', clickOutside, true)
+  }
+})
+
 
   return (
     <div className='menu-wrapper'>
