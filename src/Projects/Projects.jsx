@@ -5,8 +5,8 @@ import './Projects.scss'
 function Projects() {
 
 let projectsList = [
-  {name: 'Wishlist', tech: 'React, API’s, React Hooks, Bootstrap, Sass', 
-  bgr: 'underconstr', link: 'https://github.com/Mejsun/wishlist'},
+  {name: 'Wishlist', tech: 'React, API’s, Bootstrap, Sass', 
+  bgr: 'memento', link: 'https://mymementos.herokuapp.com/'},
   {name: 'Calculator', tech: 'HTML, CSS, JavaScript', 
   bgr: 'calc', link: 'https://calculatingaway.netlify.app/'},
   {name: 'URL Shortener', tech: 'JavaAcript, Node.js, MongoDB, Express', 
@@ -19,7 +19,7 @@ let projectsList = [
   bgr:'skynews', link: 'https://skynewsremake.netlify.app/'},
   {name: 'Nodemailer', tech: 'Node.js, Express',
   bgr:'underconstr', link:'https://github.com/Mejsun/nodemailer'},
-  {name: 'To do list', tech: 'React, React Hooks, Sass',
+  {name: 'To do list', tech: 'React, Sass',
   bgr:'todo',  link: 'https://mytodosonweb.netlify.app/'}
 ]
 
