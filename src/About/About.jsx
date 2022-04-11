@@ -16,7 +16,7 @@ function About() {
       <div className='contact-grid'>
           <a className='contact-info' href='https://github.com/Mejsun' target='_blank' rel='noreferrer'><i className="fa-brands fa-github-square fa-fw"></i>Github</a>
           <a className='contact-info' href='https://www.linkedin.com/in/mejsun-al-ghoul/' target='_blank' rel='noreferrer'><i className="fa-brands fa-linkedin fa-fw"></i>Linkedin</a>
-          <a className='contact-info' href="https://drive.google.com/file/d/1IX0W6sD9LlnYNg7Y5WodMRyLt4X7SuBL/view?usp=sharing" target='_blank' rel='noreferrer'><i className="fa-solid fa-file-lines fa-fw"></i>CV</a>
+          <a className='contact-info' href="https://drive.google.com/file/d/1UX1RAbEVK8-ZcyTx-KyyaLvj4cyIVb8z/view?usp=sharing" target='_blank' rel='noreferrer'><i className="fa-solid fa-file-lines fa-fw"></i>CV</a>
       </div>
     </div>
     <div className='about-container'>
