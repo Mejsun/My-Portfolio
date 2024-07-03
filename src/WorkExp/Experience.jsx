@@ -16,22 +16,29 @@ function Experience () {
             <h2>07/22 – Currently</h2>
             <h2>5App: Frontend developer </h2>
             <ul>
-              <li>item 1</li>
-              <li>item 2</li>
-              <li>item 3</li>
+              <li>Tech stack: React, Typescript, Cypress, Storybook, Figma, Node, MySQL</li>
+              <li>Improved test coverage which resulted in less bugs and lowered regressions</li>
+              <li>Handled custom API for generating SQL</li>
+              <li>Refactored React class based components to functional components</li>
+              <li>Refactored frontend components to Typescript - from none to 16% </li>
+              <li>Removed unused legacy files</li>
+              <li>Introduced Zapier automation</li>
+              <li>Contributed to writing documentation using Docusaurus</li>
+              <li>Created new complex features written in React with Typescript</li>
+              <li>Key team member covering both frontend and backend tickets</li>
             </ul>
           </div> 
 
           <div className='work-experience-item'>
             <h2>Other work experience</h2>
-            <p>Previous roles included various responsibilities, such as:</p>
+            <p>My previous roles included various responsibilities, such as:</p>
             <ul>
               <li>Creating, publishing and managing social media content </li>
-              <li>Preparing and writing brochures, infographics, reports and managing and publishing online content</li>
+              <li>Preparing and writing brochures, infographics and reports </li>
+              <li>Managing and publishing online content</li>
               <li>Planning and implementing promotional campaigns </li>
               <li>Analysing potential strategic partner relationships</li>
-              <li>Main point of contact between different teams as an assistant to regional manager for an airline</li>
-              <li>Researching information on international visits, cooperation initiatives and agreements </li>
+              <li>Main point of contact between different teams</li>
               <li>Organising various events for international staff and students</li>
             </ul>
           </div> 
