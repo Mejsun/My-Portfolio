@@ -8,6 +8,8 @@ function ContactForm() {
   const emailRef = useRef();
   const messageRef = useRef();
 
+  const [alert, setAlert] = useState('')
+
 function collectInfo(){
   contact.name = nameRef.current.value
   contact.email = emailRef.current.value
@@ -53,9 +55,14 @@ function contactInfo (e){
 
 async function submitForm (){
   if(contact.name && contact.email && contact.message){
-      const res = fetch("https://mejsunsnodemailer.herokuapp.com/contact", {
+      await fetch("https://nodemailer-2546q2z37-mejsuns-projects.vercel.app", {
       method: "POST",
-      headers: {"Content-type": "application/json",},
+      headers: {
+        "Content-type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "POST",
+        // "Access-Control-Allow-Headers": "Content-Type, Authorization"
+      },
       body: JSON.stringify ({contact}),
     })
      .then((res) => res.json())
@@ -63,16 +70,17 @@ async function submitForm (){
       const resData = await res;
       console.log(resData);
       if (resData.status === "success") {
-        alert("Thank you!");
+        setAlert("Thank you!");
         nameRef.current.className = 'valid'
         emailRef.current.className = 'valid'
         messageRef.current.className = 'valid'
       } else if (resData.status === "fail") {
-        alert("Message failed to send");
+        setAlert("Message failed to send.");
+        console.log(resData)
       }
     })
   } else{
-    alert('Please complete all form fields')
+    setAlert('Please complete all fields.')
   }
 }
 
@@ -104,7 +112,7 @@ async function submitForm (){
       onChange={(e) => {contactInfo(e)}}
       onBlur={()=>collectInfo()} ref={messageRef} 
       />
-      
+      <p className='info'>{alert}</p>
       <button type='button' className='submit'
       onClick={() => submitForm()}
       >Submit</button>

@@ -16,16 +16,16 @@ function Experience () {
             <h2>07/22 – Currently</h2>
             <h2>5App: Frontend developer </h2>
             <ul>
-              <li>Tech stack: React, Typescript, Cypress, Storybook, Figma, Node, MySQL</li>
-              <li>Improved test coverage which resulted in less bugs and lowered regressions</li>
+              <li>Key team member covering both frontend and backend tickets</li>
+              <li>Created new complex features written in React with Typescript</li>
+              <li>Regularly written unit tests for APIs</li>
+              <li>Improved frontend test coverage using Cypress which resulted in less bugs and lowered regressions</li>
               <li>Handled custom API for generating SQL</li>
               <li>Refactored React class based components to functional components</li>
-              <li>Refactored frontend components to Typescript - from none to 16% </li>
-              <li>Removed unused legacy files</li>
+              <li>Refactored frontend components to Typescript </li>
               <li>Introduced Zapier automation</li>
               <li>Contributed to writing documentation using Docusaurus</li>
-              <li>Created new complex features written in React with Typescript</li>
-              <li>Key team member covering both frontend and backend tickets</li>
+              <li>Tech stack: React, Typescript, Cypress, Jest, Storybook, Figma, Node, MySQL</li>
             </ul>
           </div> 
 
