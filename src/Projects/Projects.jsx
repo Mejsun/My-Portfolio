@@ -5,14 +5,14 @@ import './Projects.scss'
 function Projects() {
 
 let projectsList = [
+  {name: 'Pokedex', tech: 'HTML, CSS, JavaScript, API', 
+  bgr: 'Pokedex', link: 'https://mejsunspokedex.netlify.app/'},
   {name: 'Mementos', tech: 'React, API’s, Bootstrap, Sass', 
   bgr: 'memento', link: 'https://mymementos.netlify.app/'},
   {name: 'Mementos - rebuilt', tech: 'Next.js, Typescript, Tailwind, MySQL', 
   bgr: 'underconstr', link: 'https://github.com/Mejsun/mementos'},
   {name: 'Calculator', tech: 'HTML, CSS, JavaScript', 
   bgr: 'calc', link: 'https://calculatingaway.netlify.app/'},
-  {name: 'Pokedex', tech: 'HTML, CSS, JavaScript, API', 
-  bgr: 'Pokedex', link: 'https://mejsunspokedex.netlify.app/'},
   {name: 'Language Shake', tech: 'HTML, CSS, JavaScript', 
   bgr: 'Lang', link: 'https://languageshake.netlify.app/'},
   {name: 'SkyNews', tech: 'HTML, CSS', 
@@ -36,10 +36,9 @@ const settings = {
 
   return (
     <div className='container-projects wrapper' id='projects'>
-    <h1>Projects</h1>
-    <p> Please see more projects on my <a href='https://codepen.io/mejsun' target='_blank' rel='noreferrer'>Codepen</a></p>
-    <div className='projects-slider'>
-    <Slider {...settings}>
+      <h1>Projects</h1>
+      <div className='projects-slider'>
+        <Slider {...settings}>
           {projectsList.map((project) => (
       <div key={Math.random()}>
         <img src={require('../static/Images/' + project.bgr + '.avif')} alt='project screenshot'/>
@@ -51,6 +50,7 @@ const settings = {
       ))}
         </Slider>
       </div>
+      <p> For more projects, have a look at my <a href='https://codepen.io/mejsun' target='_blank' rel='noreferrer'>Codepen</a>.</p>
     </div>
   )
 }

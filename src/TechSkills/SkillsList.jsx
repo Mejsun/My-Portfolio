@@ -1,6 +1,6 @@
 import React from 'react'
 import './Skills.scss'
-import Certificates from './Certificates';
+// import Certificates from './Certificates';
 
 let skillsList = [
   {name: 'HTML', icon: 'html'},
@@ -49,7 +49,7 @@ function SkillsList() {
         ))}
         </div>
       </div>
-      <Certificates/>
+      {/* <Certificates/> */}
     </div>
   )
 }

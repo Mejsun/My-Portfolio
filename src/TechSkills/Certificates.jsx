@@ -5,8 +5,7 @@ function Certificates() {
     <div>
     <h1>Certificates</h1>
     <div className='certificates'>
-
-        <h2>FreeCodeCamp</h2>
+        <h2>FreeCodeCamp:</h2>
         <ul>
           <li className='certificate-text'>Responsive Web Design (HTML and CSS)</li>
           <li className='certificate-text'>JavaScript Algorithms and Data Structures</li>
