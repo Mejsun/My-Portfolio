@@ -1,19 +1,13 @@
 @import '../App.scss';
 
 .projects-slider{ 
-    width:700px;
-    margin: 20px auto;
-    @media (max-width: $breakpoint-medium){
-        width: 600px;
-     }
-    @media (max-width: $breakpoint-small){
-       width: 450px;
-    }
+    width: 30rem;
+    margin: 1rem auto;
     @media (max-width: $breakpoint-xs){
-        width: 350px;
+        width: 20rem;
      }
      @media (max-width: $breakpoint-mobile){
-        width: 220px;
+        width: 15rem;
      }
 }
 .slick-prev{
@@ -58,14 +52,13 @@
             font-weight: 600;
             transition: $transition ease-in-out;
             .heading2, p{
-                padding: 0 25px;
+                padding: 0 2rem;;
                 @media (max-width: $breakpoint-small){
                     font-size: 1.5rem;
-                    padding: 0 20px;
                 }
                 @media (max-width: $breakpoint-mobile){
                     font-size: 1.1rem;
-                    padding: 0 20px;
+                    padding: 0 1rem;
                 }
             }
         }

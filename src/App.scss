@@ -25,22 +25,22 @@ $breakpoint-mobile: 499px;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 10px;
+    column-gap: 0.5rem;
     width: 45vw;
     margin:auto;
     @media (max-width: $breakpoint-medium){
        width: 80vw;
-       margin-bottom: 20px;
+       margin-bottom: 1rem;
     }
     @media (max-width: $breakpoint-small){
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
-        row-gap: 10px;
+        row-gap: 0.6rem;
     }
 }
 @mixin contactButton {
-    border-radius: 50px;
-    padding: 10px 0;
+    border-radius: 2rem;
+    padding: 0.6rem 0;
     font-size: 1.2rem;
     background-color: $highlight-color;
     color: white;
@@ -61,7 +61,7 @@ $breakpoint-mobile: 499px;
 }
 %text {
     color: $primary-color;
-    padding: 5px 0;
+    padding: 0.3rem 0;
     font-size: 2rem;
     @media (max-width: $breakpoint-xs){
         font-size: 1.5rem;
@@ -91,10 +91,10 @@ h2, .heading2 {
     height: fit-content;
     max-width: 100vw;
     overflow: hidden;
-    padding: 85px 5vw 40px 5vw;
+    padding: 4.5rem 5vw 2rem 5vw;
     border-bottom: $border-bottom;
     @media (max-width: $breakpoint-mobile){
-        padding-bottom: 50px;
+        padding-bottom: 3rem;
         max-width: 100vw;
     }
 }

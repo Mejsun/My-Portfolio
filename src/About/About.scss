@@ -2,7 +2,7 @@
 
 .my-image-waving{
     @include centre();
-    padding-top: 30px;
+    padding-top: 2rem;
     opacity: 0.7;
     .body-static{
         height: 350px;
@@ -22,14 +22,8 @@
 }
 .about-container{
     background-color: $secondary-color;
-    padding: 90px 30px;
-    border-radius: 100px 100px 100px 0;
-    @media (max-width: $breakpoint-medium){
-        border-radius: 0px 100px 100px 100px;
-    }
-    @media (max-width: $breakpoint-xs){
-        padding: 30px;
-      }
+    padding: 2.5rem;
+    border-radius: 0 2rem 2rem 2rem;
 }
 @keyframes wave {
     0% { transform: rotate(-28deg); }
