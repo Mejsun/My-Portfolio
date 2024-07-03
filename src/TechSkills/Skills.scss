@@ -34,52 +34,17 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
 .certificates{
     display: flex;
-    width: 88vw;
+    flex-direction: column;
     justify-content: space-evenly;
-    padding-top: 30px;
     .certificate-text{
+        margin:auto;
         width: 50%;
-        @include centre();
-        flex-direction: column;
-        padding: 100px 30px;
-        position: relative;
         transition: $transition;
         &:hover{
             transform: scale(1.05);
         }
-        &:nth-child(1)::after{
-            background-image: url('../static/Images/cert1.avif');
-        }
-        &:nth-child(2)::after{
-            background-image: url('../static/Images/cert2.avif');
-        }
-        &:nth-child(3)::after{
-            background-image: url('../static/Images/cert3.avif');
-        }
-        &::after {
-            content: "";
-            position: absolute;
-            filter: opacity(10%);
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center;
-        }
-        @media (max-width: $breakpoint-medium){
-            padding: 80px 20px;
-        }
-        @media (max-width: $breakpoint-small){
-            padding: 20px 10px;
-        }
-    }
-    @media (max-width: $breakpoint-medium){
-        flex-direction: column;
-        width: 100%;
     }
 }
