@@ -1,4 +1,5 @@
 import React, {useRef, useState} from 'react'
+import emailjs from '@emailjs/browser'
 import './Contact.scss'
 
 function ContactForm() {
@@ -7,6 +8,7 @@ function ContactForm() {
   const nameRef = useRef();
   const emailRef = useRef();
   const messageRef = useRef();
+  const form = useRef();
 
   const [alert, setAlert] = useState('')
 
@@ -23,26 +25,22 @@ function validateInfo(){
 
   if (contact.name && nameRegex.test(contact.name) === true){
     nameRef.current.className = 'valid'
-    console.log('Name valid!');
   }else{
     nameRef.current.className = 'invalid'
-    console.log('Name invalid!');
+    setAlert('Please add a valid name.')
   }
 
   if (contact.email && emailRegex.test(contact.email) === true){
     emailRef.current.className = 'valid'
-    console.log('email valid!')
   }else{
     emailRef.current.className = 'invalid'
-    console.log('email error!')
+    setAlert('Please add a valid email.')
   }
 
   if(contact.message === ''){ 
     messageRef.current.className ='invalid'
-    console.log('msg error!')
   }else{
     messageRef.current.className = 'valid'
-    console.log('msg ok!')
   };
 }
 
@@ -53,35 +51,20 @@ function contactInfo (e){
   }));
 }
 
-async function submitForm (){
-  if(contact.name && contact.email && contact.message){
-      await fetch("https://nodemailer-2546q2z37-mejsuns-projects.vercel.app", {
-      method: "POST",
-      headers: {
-        "Content-type": "application/json",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "POST",
-        // "Access-Control-Allow-Headers": "Content-Type, Authorization"
-      },
-      body: JSON.stringify ({contact}),
-    })
-     .then((res) => res.json())
-     .then(async (res) => {
-      const resData = await res;
-      console.log(resData);
-      if (resData.status === "success") {
-        setAlert("Thank you!");
-        nameRef.current.className = 'valid'
-        emailRef.current.className = 'valid'
-        messageRef.current.className = 'valid'
-      } else if (resData.status === "fail") {
-        setAlert("Message failed to send.");
-        console.log(resData)
-      }
-    })
-  } else{
-    setAlert('Please complete all fields.')
-  }
+function submitForm (e) {
+  e.preventDefault()
+  console.log('done')
+  emailjs.sendForm('service_sexlscu','template_ni4vc5r', form.current, {publicKey: 'D3mVcImkhQo09jkHS'})
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          setAlert('Thank you!')
+        },
+        (error) => {
+          console.log('FAILED...', error);
+          setAlert('Message failed to send')
+        },
+      );
 }
 
   return (
@@ -94,7 +77,8 @@ async function submitForm (){
         <button className='contact-info'> <i className='fas fa-location-dot fa-fw'></i> London, UK </button>
       </div>
     </div>
-    <form>
+
+    <form onSubmit={(e) => submitForm(e)} ref={form}>
       <label htmlFor='name' className='heading2'>Name </label>
       <input type='text' name='name' aria-label='input'
       onChange={(e) => {contactInfo(e)}} 
@@ -113,9 +97,7 @@ async function submitForm (){
       onBlur={()=>collectInfo()} ref={messageRef} 
       />
       <p className='info'>{alert}</p>
-      <button type='button' className='submit'
-      onClick={() => submitForm()}
-      >Submit</button>
+      <button type='button' className='submit' onClick={(e) => submitForm(e)}>Submit</button>
     </form>
    </div>
   )
