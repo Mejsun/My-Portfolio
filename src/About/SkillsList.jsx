@@ -1,8 +1,7 @@
 import React from 'react'
 import './Skills.scss'
-// import Certificates from './Certificates';
 
-let skillsList = [
+const skillsList = [
   {name: 'HTML', icon: 'html'},
   {name: 'CSS', icon: 'css'},
   {name: 'JavaScript', icon: 'js'},
@@ -40,16 +39,17 @@ let skillsList = [
 
 function SkillsList() {
   return (
-    <div className='wrapper' id='skills'>
+    <div id='skills'>
       <div>
-        <h1>Technical Skills</h1>
         <div className='skills'>
         {skillsList.map((skill) => (
-          <div key={Math.random()}><img src= {require('../static/Icons/' + skill.icon + '.avif')} alt='icon'/>{skill.name}</div>
+          <div key={Math.random()}>
+            <img src= {require('../static/Icons/' + skill.icon + '.avif')} alt='icon'/>
+            {skill.name}
+          </div>
         ))}
         </div>
       </div>
-      {/* <Certificates/> */}
     </div>
   )
 }

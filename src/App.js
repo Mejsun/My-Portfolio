@@ -6,7 +6,6 @@ import Menu from './Menu/Menu';
 import About from './About/About';
 import ContactForm from './ContactForm/ContactForm';
 import Projects from './Projects/Projects';
-import SkillsList from './TechSkills/SkillsList'
 import Experience from './WorkExp/Experience';
 
 function App() {
@@ -15,7 +14,6 @@ function App() {
       <Menu/>
       <About/>
       <Projects/>
-      <SkillsList/>
       <Experience/>
       <ContactForm/>
     </div>

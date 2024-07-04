@@ -20,11 +20,7 @@
           }
     }
 }
-.about-container{
-    background-color: $secondary-color;
-    padding: 2.5rem;
-    border-radius: 0 2rem 2rem 2rem;
-}
+
 @keyframes wave {
     0% { transform: rotate(-28deg); }
     50% { transform: rotate(-35deg);}
