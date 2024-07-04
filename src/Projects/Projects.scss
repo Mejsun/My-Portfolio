@@ -36,9 +36,9 @@
     }
     img {
         width: 100%;
-       position: relative;
-       filter: opacity(15%);
-       transition: $transition ease-in-out;
+        position: relative;
+        filter: opacity(15%);
+        transition: $transition ease-in-out;
     }  
     .slick-active{
         transform: scale(1.1);

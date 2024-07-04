@@ -40,17 +40,19 @@ const settings = {
       <div className='projects-slider'>
         <Slider {...settings}>
           {projectsList.map((project) => (
-      <div key={Math.random()}>
-        <img src={require('../static/Images/' + project.bgr + '.avif')} alt='project screenshot'/>
-        <div className='project-text'>
-          <a className='heading2' href={project.link} target='_blank' rel='noreferrer'>{project.name}</a>
-          <p> Tech used: {project.tech} </p>
-        </div>
-      </div>
-      ))}
+            <div key={Math.random()}>
+              <img src={require('../static/Images/' + project.bgr + '.avif')} alt='project screenshot'/>
+              <div className='project-text'>
+                <a className='heading2' href={project.link} target='_blank' rel='noreferrer'>{project.name}</a>
+                <p> Tech used: {project.tech} </p>
+              </div>
+            </div>
+          ))}
         </Slider>
       </div>
-      <p> For more projects, have a look at my <a href='https://codepen.io/mejsun' target='_blank' rel='noreferrer'>Codepen</a>.</p>
+      <p> To see more projects, have a look at my 
+          <a href='https://codepen.io/mejsun' target='_blank' rel='noreferrer'>Codepen</a>.
+      </p>
     </div>
   )
 }
