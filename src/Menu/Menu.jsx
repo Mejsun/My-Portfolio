@@ -5,18 +5,14 @@ function Menu() {
   const [openMenu, setOpenMenu] = useState(false)
 
   useEffect(() => {
-      const clickOutside = (e) =>{
-        setOpenMenu(false)
-      }
-      document.addEventListener('click', clickOutside, true);
-    return () => {
-      document.removeEventListener('click', clickOutside, true)
-    }
-  })
-  
-  useEffect(() => {
       if(window.innerWidth > 500){
         setOpenMenu(true)
+      }else{
+        const clickOutside = (e) =>{setOpenMenu(false)}
+        document.addEventListener('click', clickOutside, true);
+        return () => {
+          document.removeEventListener('click', clickOutside, true)
+        }
       }
     }, []
   )
