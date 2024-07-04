@@ -1,15 +1,10 @@
 import React from 'react'
-// import EduMap from './EduMap'
 import './Experience.scss'
 
 function Experience () {
   return (
     <div className='work-container wrapper' id='experience'>
-      <div>
         <h1>Work Experience</h1>
-        {/* <p className='instruction'>Click the map to see my educational background. Click anywhere outside to close it.</p>
-        <EduMap/> */}
-      </div>
         <div className='work-experience-list'>
 
           <div className='work-experience-item'>
