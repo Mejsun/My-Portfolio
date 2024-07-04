@@ -17,7 +17,7 @@ function About() {
         <div className='contact-grid'>
             <a className='contact-info' href='https://github.com/Mejsun' target='_blank' rel='noreferrer'><i className="fa-brands fa-github-square fa-fw"></i>Github</a>
             <a className='contact-info' href='https://www.linkedin.com/in/mejsun' target='_blank' rel='noreferrer'><i className="fa-brands fa-linkedin fa-fw"></i>Linkedin</a>
-            <a className='contact-info' href="https://drive.google.com/file/d/1FpzXBhH6P_HgnRImQeKlROXv-lbnzVI_/view?usp=sharing" target='_blank' rel='noreferrer'><i className="fa-solid fa-file-lines fa-fw"></i>CV</a>
+            <a className='contact-info' href="https://drive.google.com/file/d/1Pz-46aP51mp1RV4zFA5ZEHrj1aUEaOvV/view?usp=sharing" target='_blank' rel='noreferrer'><i className="fa-solid fa-file-lines fa-fw"></i>CV</a>
         </div>
       </div>
       <SkillsList />
