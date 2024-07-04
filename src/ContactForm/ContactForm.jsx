@@ -14,13 +14,6 @@ function ContactForm() {
   const emailRef = useRef();
   const messageRef = useRef();
 
-  function collectInfo(){
-    contact.name = nameRef.current.value
-    contact.email = emailRef.current.value
-    contact.message = messageRef.current.value
-    validateInfo()
-  }
-
   function validateInfo(){
     const emailRegex = /^[a-zA-Z0-9!#$%&'*+=?^_`{|}~\W]+@[a-zA-Z0-9!#$%&'*+=?^_`{|}~\W]+\.[a-z.]{2,}/gm
     const nameRegex = /^[^±!@£$%^&*_+§¡€#¢§¶•ªº«\\<>?:;|=.,0-9]{2,}$/gm
@@ -45,6 +38,23 @@ function ContactForm() {
     }else{
       messageRef.current.className = 'invalid'
     };
+
+    if(!isNameValid) {
+      setAlert('Please write a valid name.')
+    }else if(isNameValid && !isEmailValid){
+      setAlert('Please write a valid email.')
+    }else if(isNameValid && isEmailValid && !contact.message){
+      setAlert('Please add a message.')
+    }else{
+      setAlert('')
+    }
+  }
+
+  function collectInfo(){
+    contact.name = nameRef.current.value
+    contact.email = emailRef.current.value
+    contact.message = messageRef.current.value
+    validateInfo()
   }
 
   function contactInfo (e){
@@ -63,7 +73,7 @@ function ContactForm() {
           setAlert('Thank you!')
         },
         (error) => {
-          console.log('FAILED...', error);
+          console.log('FAILED :(', error);
           setAlert('Message failed to send')
         },
       );
@@ -81,19 +91,19 @@ function ContactForm() {
     </div>
 
     <form onSubmit={(e) => submitForm(e)} ref={form}>
-      <label htmlFor='name' className='heading2'>Name </label>
+      <label htmlFor='name' className='subheading'>Name </label>
       <input type='text' name='name' aria-label='input'
       onChange={(e) => {contactInfo(e)}} 
       onBlur={()=>collectInfo()} ref={nameRef} 
       />
       
-      <label htmlFor='email' className='heading2'> Email </label>
+      <label htmlFor='email' className='subheading'> Email </label>
       <input type='email' name='email' aria-label='input' 
       onChange={(e) => {contactInfo(e)}} 
       onBlur={()=>collectInfo()} ref={emailRef} 
       />
       
-      <label htmlFor='message' className='heading2'> Message </label>
+      <label htmlFor='message' className='subheading'> Message </label>
       <textarea className='message' type='text' name='message' aria-label='input' rows={5}
       onChange={(e) => {contactInfo(e)}}
       onBlur={()=>collectInfo()} ref={messageRef} 

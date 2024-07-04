@@ -67,7 +67,7 @@ $breakpoint-mobile: 499px;
         font-size: 1.5rem;
       }
 }
-p, h1, h2, .heading2, li {
+p, h1, h2, .subheading, li {
     @extend %text;
 }
 h1{
@@ -80,7 +80,7 @@ h1{
         font-size: 3rem;
     }
 }
-h2, .heading2 {
+h2, .subheading {
     font-family: $font-subheading;
     text-transform: uppercase;
     @media (max-width: $breakpoint-xs){

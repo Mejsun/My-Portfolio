@@ -43,7 +43,7 @@ const settings = {
             <div key={Math.random()}>
               <img src={require('../static/Images/' + project.bgr + '.avif')} alt='project screenshot'/>
               <div className='project-text'>
-                <a className='heading2' href={project.link} target='_blank' rel='noreferrer'>{project.name}</a>
+                <a className='subheading' href={project.link} target='_blank' rel='noreferrer'>{project.name}</a>
                 <p> Tech used: {project.tech} </p>
               </div>
             </div>
