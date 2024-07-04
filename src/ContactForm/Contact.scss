@@ -13,13 +13,13 @@
             width: 80vw;
         }
     }
-    input{
+    input, textarea{
         border: 1px solid $secondary-color;
         border-radius: 2rem;
         line-height: 3rem;
-        padding-left: 0.5rem;
-        margin: 0.5rem 0;
+        padding: 0.5rem 1rem;
         font-size: 1.2rem;
+        text-align: left;
         &:focus{
             outline: none; 
             border: 1px solid $primary-color;}

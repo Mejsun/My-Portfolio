@@ -2,59 +2,61 @@ import React, {useRef, useState} from 'react'
 import emailjs from '@emailjs/browser'
 import './Contact.scss'
 
-function ContactForm() {
 
+// todo: fix info messages and move things to env file
+
+
+function ContactForm() {
   const [contact, setContact] = useState({name:'', email:'', message:''});
+  const [alert, setAlert] = useState('')
+  const form = useRef();
   const nameRef = useRef();
   const emailRef = useRef();
   const messageRef = useRef();
-  const form = useRef();
 
-  const [alert, setAlert] = useState('')
-
-function collectInfo(){
-  contact.name = nameRef.current.value
-  contact.email = emailRef.current.value
-  contact.message = messageRef.current.value
-  validateInfo()
-}
-
-function validateInfo(){
-  const emailRegex = /^[a-zA-Z0-9!#$%&'*+=?^_`{|}~\W]+@[a-zA-Z0-9!#$%&'*+=?^_`{|}~\W]+\.[a-z.]{2,}/gm
-  const nameRegex = /^[^±!@£$%^&*_+§¡€#¢§¶•ªº«\\<>?:;|=.,0-9]{2,}$/gm
-
-  if (contact.name && nameRegex.test(contact.name) === true){
-    nameRef.current.className = 'valid'
-  }else{
-    nameRef.current.className = 'invalid'
-    setAlert('Please add a valid name.')
+  function collectInfo(){
+    contact.name = nameRef.current.value
+    contact.email = emailRef.current.value
+    contact.message = messageRef.current.value
+    validateInfo()
   }
 
-  if (contact.email && emailRegex.test(contact.email) === true){
-    emailRef.current.className = 'valid'
-  }else{
-    emailRef.current.className = 'invalid'
-    setAlert('Please add a valid email.')
+  function validateInfo(){
+    const emailRegex = /^[a-zA-Z0-9!#$%&'*+=?^_`{|}~\W]+@[a-zA-Z0-9!#$%&'*+=?^_`{|}~\W]+\.[a-z.]{2,}/gm
+    const nameRegex = /^[^±!@£$%^&*_+§¡€#¢§¶•ªº«\\<>?:;|=.,0-9]{2,}$/gm
+
+    const isNameValid = contact.name && nameRegex.test(contact.name) === true
+    const isEmailValid = contact.email && emailRegex.test(contact.email) === true
+    
+    if (isNameValid){
+      nameRef.current.className = 'valid'
+    }else{
+      nameRef.current.className = 'invalid'
+    }
+
+    if (isEmailValid){
+      emailRef.current.className = 'valid'
+    }else{
+      emailRef.current.className = 'invalid'
+    }
+
+    if(contact.message){ 
+      messageRef.current.className ='valid'
+    }else{
+      messageRef.current.className = 'invalid'
+    };
   }
 
-  if(contact.message === ''){ 
-    messageRef.current.className ='invalid'
-  }else{
-    messageRef.current.className = 'valid'
-  };
-}
+  function contactInfo (e){
+    setContact((info) => ({
+      ...info,
+      [e.target.name]: e.target.value,
+    }));
+  }
 
-function contactInfo (e){
-  setContact((info) => ({
-    ...info,
-    [e.target.name]: e.target.value,
-  }));
-}
-
-function submitForm (e) {
-  e.preventDefault()
-  console.log('done')
-  emailjs.sendForm('service_sexlscu','template_ni4vc5r', form.current, {publicKey: 'D3mVcImkhQo09jkHS'})
+  function submitForm (e) {
+    e.preventDefault()
+    emailjs.sendForm('service_sexlscu','template_ni4vc5r', form.current, {publicKey: 'D3mVcImkhQo09jkHS'})
       .then(
         () => {
           console.log('SUCCESS!');
@@ -65,7 +67,7 @@ function submitForm (e) {
           setAlert('Message failed to send')
         },
       );
-}
+  }
 
   return (
     <div className='contact-container wrapper' id='contact'>
@@ -86,13 +88,13 @@ function submitForm (e) {
       />
       
       <label htmlFor='email' className='heading2'> Email </label>
-      <input type='email' name='email' aria-label='input'
+      <input type='email' name='email' aria-label='input' 
       onChange={(e) => {contactInfo(e)}} 
       onBlur={()=>collectInfo()} ref={emailRef} 
       />
       
       <label htmlFor='message' className='heading2'> Message </label>
-      <input className='message' type='text' name='message' aria-label='input'
+      <textarea className='message' type='text' name='message' aria-label='input' rows={5}
       onChange={(e) => {contactInfo(e)}}
       onBlur={()=>collectInfo()} ref={messageRef} 
       />
