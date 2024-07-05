@@ -50,7 +50,7 @@ const settings = {
           ))}
         </Slider>
       </div>
-      <p>To see more projects, have a look at my <a href='https://codepen.io/mejsun' target='_blank' rel='noreferrer'>Codepen</a>.</p>
+      <p>To see more projects, have a look at my <a href='https://codepen.io/mejsun' target='_blank' rel='noreferrer' className='link'>Codepen</a>.</p>
     </div>
   )
 }

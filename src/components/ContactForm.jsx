@@ -87,22 +87,39 @@ function ContactForm() {
     </div>
 
     <form onSubmit={(e) => submitForm(e)} ref={form}>
-      <label htmlFor='name' className='subheading'>Name </label>
-      <input type='text' name='name' aria-label='input'
-      onChange={(e) => {contactInfo(e)}} 
-      onBlur={()=>collectInfo()} ref={nameRef} 
+      <label htmlFor='name' className='subheading'>Name</label>
+      <input 
+        type='text' 
+        name='name' 
+        id='name' 
+        aria-label='name input'
+        onChange={(e) => {contactInfo(e)}} 
+        onBlur={()=>collectInfo()} 
+        ref={nameRef} 
       />
       
-      <label htmlFor='email' className='subheading'> Email </label>
-      <input type='email' name='email' aria-label='input' 
-      onChange={(e) => {contactInfo(e)}} 
-      onBlur={()=>collectInfo()} ref={emailRef} 
+      <label htmlFor='email' className='subheading'>Email</label>
+      <input 
+        type='email' 
+        name='email' 
+        id='email' 
+        aria-label='email input' 
+        onChange={(e) => {contactInfo(e)}} 
+        onBlur={()=>collectInfo()} 
+        ref={emailRef} 
+        autoComplete='on'
       />
       
       <label htmlFor='message' className='subheading'> Message </label>
-      <textarea className='message' type='text' name='message' aria-label='input' rows={5}
-      onChange={(e) => {contactInfo(e)}}
-      onBlur={()=>collectInfo()} ref={messageRef} 
+      <textarea 
+        type='text' 
+        name='message' 
+        id='message' 
+        aria-label='input' 
+        onChange={(e) => {contactInfo(e)}}
+        onBlur={()=>collectInfo()} 
+        ref={messageRef} 
+        rows={5}
       />
       <p className='info'>{alert}</p>
       <button type='button' className='submit' onClick={(e) => submitForm(e)}>Submit</button>
