@@ -1,12 +1,11 @@
 import React from "react"
 import './App.scss';
-import Menu from './Menu/Menu';
-//import Router from "./Router/Router";
 
-import About from './About/About';
-import ContactForm from './ContactForm/ContactForm';
-import Projects from './Projects/Projects';
-import Experience from './WorkExp/Experience';
+import Menu from './components/Menu';
+import About from './components/About';
+import ContactForm from './components/ContactForm';
+import Projects from './components/Projects';
+import Experience from './components/Experience';
 
 function App() {
   return (

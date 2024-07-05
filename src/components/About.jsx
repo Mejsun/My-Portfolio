@@ -1,7 +1,7 @@
 import React from 'react'
 import body from '../static/Images/body.avif'
 import hand from '../static/Images/hand.avif'
-import './About.scss'
+import '../styles/About.scss'
 import SkillsList from './SkillsList'
 
 function About() {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from 'react'
-import './Menu.scss'
+import '../styles/Menu.scss'
 
 function Menu() {
   const [openMenu, setOpenMenu] = useState(false)

@@ -1,10 +1,6 @@
 import React, {useRef, useState} from 'react'
 import emailjs from '@emailjs/browser'
-import './Contact.scss'
-
-
-// todo: fix info messages and move things to env file
-
+import '../styles/Contact.scss'
 
 function ContactForm() {
   const [contact, setContact] = useState({name:'', email:'', message:''});

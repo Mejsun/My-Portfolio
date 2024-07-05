@@ -1,5 +1,5 @@
 import React from 'react'
-import './Skills.scss'
+import '../styles/Skills.scss'
 
 const skillsList = [
   {name: 'HTML', icon: 'html'},

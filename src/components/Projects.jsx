@@ -1,6 +1,6 @@
 import React from 'react'
 import Slider from 'react-slick'
-import './Projects.scss'
+import '../styles/Projects.scss'
 
 function Projects() {
 
