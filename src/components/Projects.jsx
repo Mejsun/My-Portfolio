@@ -10,7 +10,7 @@ let projectsList = [
   {name: 'Mementos', tech: 'React, API’s, Bootstrap, Sass', 
   bgr: 'memento', link: 'https://mymementos.netlify.app/'},
   {name: 'Mementos - rebuilt', tech: 'Next.js, Typescript, Tailwind, MySQL', 
-  bgr: 'underconstr', link: 'https://github.com/Mejsun/mementos'},
+  bgr: 'mementos', link: 'https://github.com/Mejsun/mementos'},
   {name: 'Calculator', tech: 'HTML, CSS, JavaScript', 
   bgr: 'calc', link: 'https://calculatingaway.netlify.app/'},
   {name: 'Language Shake', tech: 'HTML, CSS, JavaScript', 
